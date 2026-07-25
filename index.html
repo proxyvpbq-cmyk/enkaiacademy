@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Enkai Art Agency | Tran Quang Trung</title>
+  <meta name="description" content="Enkai Art Agency - Chủ sở hữu Tran Quang Trung" />
+  <link rel="icon" href="logo.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@500;600;700;800&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a href="#" class="brand">
+        <img src="logo.svg" alt="Enkai" class="brand-logo" onerror="this.style.display='none'" />
+        <div class="brand-text">
+          <span class="brand-name">Enkai Art Agency</span>
+          <span class="brand-owner">CHỦ SỞ HỮU: TRAN QUANG TRUNG</span>
+        </div>
+      </a>
+      <nav class="nav" id="navLinks">
+        <a href="#home" class="nav-link">Trang chủ</a>
+        <a href="#gallery" class="nav-link">Danh mục</a>
+        <a href="#about" class="nav-link">Giới thiệu</a>
+        <a href="#contact" class="nav-link">Liên hệ</a>
+        <a href="#gallery" class="btn-cta">+ Tải lên tác phẩm</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="container">
+      <p class="hero-badge">✦ Enkai Art Agency</p>
+      <h1 class="hero-title">Không gian nghệ thuật<br/><span>số cao cấp</span></h1>
+      <p class="hero-desc">Triển lãm & lưu trữ tác phẩm của <strong>Tran Quang Trung</strong> — chủ sở hữu duy nhất Enkai Art Agency.</p>
+      <div class="hero-actions">
+        <a href="#gallery" class="btn-primary">Khám phá tác phẩm</a>
+        <a href="#about" class="btn-ghost">Về người sáng lập</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery" class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2>Danh mục tác phẩm</h2>
+        <p>Bộ sưu tập nghệ thuật số của Tran Quang Trung</p>
+      </div>
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">Tất cả</button>
+        <button class="filter-btn" data-filter="image">Hình ảnh</button>
+        <button class="filter-btn" data-filter="video">Video</button>
+      </div>
+      <div class="gallery-grid" id="galleryGrid"></div>
+    </div>
+  </section>
+
+  <section id="about" class="section about-section">
+    <div class="container about-grid">
+      <div class="about-main">
+        <span class="about-label">NGƯỜI SÁNG LẬP ENKAI</span>
+        <h2>Chủ sở hữu & Người sáng lập:<br/><span class="highlight">Tran Quang Trung</span></h2>
+        <p>
+          Enkai Art Agency được thành lập bởi <strong>Tran Quang Trung</strong> với tầm nhìn tôn vinh tính thẩm mỹ và sức mạnh sáng tạo. Chúng tôi tự hào mang đến những trải nghiệm thị giác tinh tế trên các lĩnh vực kỹ thuật số, dựng hình 3D và đồ họa chuyển động cao cấp.
+        </p>
+        <p>
+          Bộ sưu tập này đóng vai trò như một phòng trưng bày độc quyền cho các tác phẩm sáng tạo của <strong>Tran Quang Trung</strong>, cho phép khách tham quan và khách hàng trên toàn thế giới khám phá, đánh giá cao và hợp tác một cách dễ dàng.
+        </p>
+        <p class="ownership">
+          Toàn bộ nội dung, hình ảnh và tác phẩm trên website này thuộc quyền sở hữu hợp pháp của <strong>Tran Quang Trung</strong> — chủ sở hữu duy nhất của Enkai Art Agency.
+        </p>
+      </div>
+      <div class="mission-card">
+        <h3>◎ Sứ mệnh của Cơ quan</h3>
+        <ul>
+          <li><strong>Ý tưởng độc đáo:</strong> Mỗi tác phẩm đều truyền tải một câu chuyện riêng biệt.</li>
+          <li><strong>Đa dạng nội dung:</strong> Từ ảnh tĩnh độ phân giải cực cao đến video chuyển động sống động.</li>
+          <li><strong>Truy cập liền mạch:</strong> Trải nghiệm xem được tối ưu hóa trên cả thiết bị di động và máy tính để bàn.</li>
+          <li><strong>Phạm vi toàn cầu:</strong> Kết nối nghệ thuật kỹ thuật số chất lượng cao với các nghệ sĩ trên toàn thế giới.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <h2>Liên hệ</h2>
+      <p class="section-desc">Gửi lời nhắn đến Tran Quang Trung</p>
+      <div class="contact-form">
+        <div class="form-group">
+          <label>Họ và tên</label>
+          <input type="text" placeholder="Nhập tên của bạn" />
+        </div>
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" placeholder="email@example.com" />
+        </div>
+        <div class="form-group">
+          <label>Lời nhắn</label>
+          <textarea rows="4" placeholder="Viết lời nhắn..."></textarea>
+        </div>
+        <button type="button" class="btn-primary form-btn" onclick="this.classList.add('btn-clicked');setTimeout(()=>this.classList.remove('btn-clicked'),500);alert('Cảm ơn bạn đã quan tâm đến Enkai Art Agency!')">Gửi lời nhắn</button>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="logo.svg" alt="" class="footer-logo" onerror="this.style.display='none'" />
+        <span>Enkai Art Agency</span>
+      </div>
+      <p>© 2026 Tran Quang Trung · Chủ sở hữu duy nhất · All rights reserved.</p>
+    </div>
+  </footer>
+
+  <div class="modal" id="detailModal" aria-hidden="true">
+    <div class="modal-overlay"></div>
+    <div class="modal-content">
+      <button class="modal-close">&times;</button>
+      <div class="modal-media" id="modalMedia"></div>
+      <div class="modal-info">
+        <h3 id="modalTitle"></h3>
+        <p class="modal-type" id="modalType"></p>
+        <p id="modalDesc"></p>
+        <p class="modal-date" id="modalDate"></p>
+        <div class="modal-actions">
+          <button type="button" class="btn-action" id="btnCopyLink">Sao chép liên kết</button>
+          <a class="btn-action btn-download" id="btnDownload" href="#" download>Tải xuống</a>
+        </div>
+        <p class="modal-owner">© Tran Quang Trung · Enkai Art Agency</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
