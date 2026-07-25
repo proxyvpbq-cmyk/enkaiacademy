@@ -15,8 +15,11 @@
   <nav class="nav" id="nav">
     <div class="container nav-inner">
       <a href="#" class="logo">
-        <span class="logo-mark">炎</span>
-        <span class="logo-text">Enkai Art Agency</span>
+        <img src="assets/images/logo.png" alt="Enkai Art Agency" class="logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" />
+        <span class="logo-fallback" style="display:none">
+          <span class="logo-mark">炎</span>
+          <span class="logo-text">Enkai Art Agency</span>
+        </span>
       </a>
       <ul class="nav-links">
         <li><a href="#gallery" class="nav-btn">Tác phẩm</a></li>
@@ -126,7 +129,8 @@
   <footer class="footer">
     <div class="container footer-inner">
       <div class="footer-brand">
-        <span class="logo-mark">炎</span> Enkai Art Agency
+        <img src="assets/images/logo.png" alt="Enkai Art Agency" class="footer-logo" />
+        <span>Enkai Art Agency</span>
       </div>
       <p>© 2026 Tran Quang Trung. All rights reserved.</p>
     </div>
