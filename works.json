@@ -1,26 +1,29 @@
 [
   {
     "id": 1,
-    "title": "I love youu",
+    "slug": "post-k7m2x9qa",
+    "title": "Hello love you",
     "type": "image",
-    "category": "Where are you right now?",
+    "category": "PHOTOGRAPHY",
     "src": "https://i.postimg.cc/nLGrJbj9/FB-IMG-1784995289604.jpg",
-    "description": "This is me on a quiet evening. Soft white cap slightly tilted, long hair down, white tank top. I rested my hand under my chin and gave the camera a small, quiet smile. A tiny tattoo shows near my collarbone. No filters, no heavy makeup — just a simple, soft moment of me."
+    "description": "Love has treated me so terribly. It’s truly heartbreaking.",
     "date": "2019-03-12",
-    "tags": ["grey", "Bored", "Nature"]
+    "tags": ["sad", "Love", "grey"]
   },
   {
     "id": 2,
+    "slug": "post-b3n8w1rt",
     "title": "Gentle Blooms",
     "type": "image",
     "category": "PHOTOGRAPHY",
     "src": "https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=900&q=80",
-    "description": "This is me on a quiet evening. Soft white cap slightly tilted, long hair down, white tank top. I rested my hand under my chin and gave the camera a small, quiet smile. A tiny tattoo shows near my collarbone. No filters, no heavy makeup — just a simple, soft moment of me."
+    "description": "Soft floral tones in a refined pastel palette.",
     "date": "2026-01-20",
     "tags": ["Floral", "Pastel"]
   },
   {
     "id": 3,
+    "slug": "post-f5p0z4uc",
     "title": "Minimal Space",
     "type": "image",
     "category": "INTERIOR",
@@ -30,13 +33,25 @@
     "tags": ["Interior", "Minimal"]
   },
   {
+    "id": 4,
+    "slug": "vid-h9q6y2vd",
+    "title": "Memory Clip",
+    "type": "video",
+    "category": "VIDEO",
+    "src": "https://www.w3schools.com/html/mov_bbb.mp4",
+    "description": "Demo video clip.",
+    "date": "2026-04-18",
+    "tags": ["Motion", "Demo"]
+  },
+  {
     "id": 5,
+    "slug": "post-91919jakwk",
     "title": "minimal",
     "type": "image",
     "category": "Photo",
     "src": "https://i.postimg.cc/T3WLDDzf/IMG-20260612-133216.jpg",
     "description": "bau troi rhat dep.",
     "date": "2018-04-18",
-    "tags": ["Nature"]
+    "tags": ["Motion", "Demo"]
   }
 ]
