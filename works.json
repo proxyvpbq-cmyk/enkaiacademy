@@ -1,34 +1,34 @@
 [
   {
     "id": 1,
-    "title": "Ánh sáng ban mai",
+    "title": "Morning Light",
     "type": "image",
     "src": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=900&q=80",
-    "description": "Khoảnh khắc ánh sáng nhẹ nhàng len qua lớp sương sớm. Cảm giác yên bình và tinh tế.đáng yêu quá đii mất",
-    "date": "2017-03-12"
+    "description": "Soft morning light filtering through early mist. A calm and refined atmosphere.",
+    "date": "2026-03-12"
   },
   {
     "id": 2,
-    "title": "Hoa dịu dàng",
+    "title": "Gentle Blooms",
     "type": "image",
     "src": "https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=900&q=80",
-    "description": "Sắc hoa mềm mại, tông màu pastel tạo nên không gian thanh lịch và lãng mạn.",
+    "description": "Soft floral tones in a refined pastel palette.",
     "date": "2026-01-20"
   },
   {
     "id": 3,
-    "title": "Không gian tối giản",
+    "title": "Minimal Space",
     "type": "image",
     "src": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=900&q=80",
-    "description": "Góc nhìn nội thất tối giản với ánh sáng tự nhiên, mang lại cảm giác sang trọng và dễ chịu.",
+    "description": "Minimalist interior with natural light, creating a luxurious feel.",
     "date": "2025-12-05"
   },
   {
     "id": 4,
-    "title": "Video kỷ niệm",
+    "title": "Memory Clip",
     "type": "video",
     "src": "https://www.w3schools.com/html/mov_bbb.mp4",
-    "description": "Đoạn video demo. Bạn có thể thay bằng video thật của mình sau này.",
+    "description": "Demo video. Replace with your own footage.",
     "date": "2026-04-18"
   }
 ]
