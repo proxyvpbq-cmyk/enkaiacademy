@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   async function loadWorks() {
     try {
-      const res = await fetch("data/works.json");
+      const res = await fetch("works.json");
       if (!res.ok) throw new Error("Không tải được danh sách");
       works = await res.json();
       renderGallery(works);
