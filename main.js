@@ -38,8 +38,8 @@ document.addEventListener("DOMContentLoaded", () => {
     // Ensure every work has a slug
     works.forEach(w => {
       if (!w.slug) {
-        const prefix = w.type === "video" ? "vid-" : "img-";
-        w.slug = prefix + randomSlug().replace("post-", "");
+        const prefix = w.type === "video" ? "vid-" : "post-";
+        w.slug = prefix + randomSlug().replace(/^post-/, "");
       }
     });
     renderGallery(works);
@@ -96,7 +96,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function makeKey(item) {
     if (item.slug) return item.slug;
-    const prefix = item.type === "video" ? "vid-" : "img-";
+    const prefix = item.type === "video" ? "vid-" : "post-";
     return prefix + String(item.id);
   }
   function getPermalink(item) {
