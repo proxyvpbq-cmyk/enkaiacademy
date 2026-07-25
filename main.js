@@ -8,6 +8,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
   let works = [];
 
+  function randomSlug() {
+    const chars = "abcdefghijklmnopqrstuvwxyz0123456789";
+    let s = "";
+    for (let i = 0; i < 8; i++) s += chars[Math.floor(Math.random() * chars.length)];
+    return "post-" + s;
+  }
+
   async function loadWorks() {
     try {
       const res = await fetch("works.json");
@@ -17,6 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
       works = [
         {
           id: 1,
+          slug: "post-k7m2x9qa",
           title: "Morning Light",
           type: "image",
           category: "PHOTOGRAPHY",
@@ -24,29 +32,13 @@ document.addEventListener("DOMContentLoaded", () => {
           description: "Soft morning light filtering through early mist.",
           date: "2026-03-12",
           tags: ["Landscape", "Light", "Nature"]
-        },
-        {
-          id: 2,
-          title: "Gentle Blooms",
-          type: "image",
-          category: "PHOTOGRAPHY",
-          src: "https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=900&q=80",
-          description: "Soft floral tones in a refined pastel palette.",
-          date: "2026-01-20",
-          tags: ["Floral", "Pastel"]
-        },
-        {
-          id: 3,
-          title: "Minimal Space",
-          type: "image",
-          category: "INTERIOR",
-          src: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=900&q=80",
-          description: "Minimalist interior with natural light.",
-          date: "2025-12-05",
-          tags: ["Interior", "Minimal"]
         }
       ];
     }
+    // Ensure every work has a slug
+    works.forEach(w => {
+      if (!w.slug) w.slug = "post-" + String(w.id || randomSlug().slice(5));
+    });
     renderGallery(works);
     openFromUrl();
   }
@@ -99,12 +91,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const modalMedia = document.getElementById("modalMedia");
   let currentItem = null;
 
-  function postKey(id) {
-    return "post-enkai-" + id;
-  }
-  function getPermalink(id) {
+  function getPermalink(item) {
     const base = window.location.href.split("?")[0].split("#")[0];
-    return base + "?" + postKey(id);
+    const key = item.slug || ("post-enkai-" + item.id);
+    return base + "?" + key;
   }
 
   function openModal(item, updateUrl) {
@@ -148,12 +138,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const pl = document.getElementById("modalPermalink");
     if (pl) {
-      const link = getPermalink(item.id);
+      const link = getPermalink(item);
       pl.innerHTML = 'Post link: <a href="' + link + '">' + link + "</a>";
     }
 
     if (updateUrl) {
-      history.replaceState(null, "", "?" + postKey(item.id));
+      const key = item.slug || ("post-enkai-" + item.id);
+      history.replaceState(null, "", "?" + key);
     }
 
     modal.classList.add("open");
@@ -181,7 +172,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (btnCopy) {
     btnCopy.addEventListener("click", async () => {
       if (!currentItem) return;
-      const link = getPermalink(currentItem.id);
+      const link = getPermalink(currentItem);
       try {
         await navigator.clipboard.writeText(link);
         btnCopy.textContent = "Link copied!";
@@ -204,11 +195,10 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function openFromUrl() {
-    const q = window.location.search.replace(/^\?/, "");
-    const m = q.match(/post-enkai-(\d+)/i);
-    if (!m) return;
-    const id = parseInt(m[1], 10);
-    const item = works.find(w => Number(w.id) === id);
+    const q = (window.location.search || "").replace(/^\?/, "");
+    if (!q) return;
+    const key = q.split("&")[0];
+    const item = works.find(w => w.slug === key || ("post-enkai-" + w.id) === key);
     if (item) openModal(item, false);
   }
   window.addEventListener("popstate", openFromUrl);
