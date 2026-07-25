@@ -69,5 +69,19 @@
       "Motion",
       "Demo"
     ]
-  }
+  },
+  {
+"id": 6,
+    "slug": "vid-jih8c6n58js29",
+    "title": "Memory Clip",
+    "type": "video",
+    "category": "VIDEO",
+    "src": "https://raw.githubusercontent.com/proxyvpbq-cmyk/enkaiacademy/main/VID_20260612_133937.mp4",
+    "description": "Demo video clip.",
+    "date": "2026-04-18",
+    "tags": [
+      "Motion",
+      "Demo"
+    ]
+  },
 ]
