@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "title": "Morning Light",
+    "type": "image",
+    "category": "PHOTOGRAPHY",
+    "src": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=900&q=80",
+    "description": "Soft morning light filtering through early mist. A calm and refined atmosphere above the clouds.",
+    "date": "2026-03-12",
+    "tags": ["Landscape", "Light", "Nature"]
+  },
+  {
+    "id": 2,
+    "title": "Gentle Blooms",
+    "type": "image",
+    "category": "PHOTOGRAPHY",
+    "src": "https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=900&q=80",
+    "description": "Soft floral tones in a refined pastel palette, capturing delicate beauty.",
+    "date": "2026-01-20",
+    "tags": ["Floral", "Pastel", "Macro"]
+  },
+  {
+    "id": 3,
+    "title": "Minimal Space",
+    "type": "image",
+    "category": "INTERIOR",
+    "src": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=900&q=80",
+    "description": "Minimalist interior with natural light, creating a luxurious and serene feel.",
+    "date": "2025-12-05",
+    "tags": ["Interior", "Minimal", "Design"]
+  },
+  {
+    "id": 4,
+    "title": "Memory Clip",
+    "type": "video",
+    "category": "VIDEO",
+    "src": "https://www.w3schools.com/html/mov_bbb.mp4",
+    "description": "Demo video clip. Replace with your own footage anytime.",
+    "date": "2026-04-18",
+    "tags": ["Motion", "Demo"]
+  }
+]
