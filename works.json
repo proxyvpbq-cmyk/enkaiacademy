@@ -38,15 +38,5 @@
     "description": "bau troi rhat dep.",
     "date": "2018-04-18",
     "tags": ["Nature"]
-  },
-  {
-    "id": 6,
-    "title": "Video 12-06",
-    "type": "video",
-    "category": "VIDEO",
-    "src": "https://raw.githubusercontent.com/proxyvpbq-cmyk/enkaiacademy/main/VID_20260612_133937.mp4",
-    "description": "Video của tôi",
-    "date": "2026-07-25",
-    "tags": ["Motion", "Clip"]
   }
 ]
