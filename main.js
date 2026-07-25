@@ -136,12 +136,6 @@ document.addEventListener("DOMContentLoaded", () => {
       dl.style.display = "inline-flex";
     }
 
-    const pl = document.getElementById("modalPermalink");
-    if (pl) {
-      const link = getPermalink(item);
-      pl.innerHTML = 'Post link: <a href="' + link + '">' + link + "</a>";
-    }
-
     if (updateUrl) {
       const key = item.slug || ("post-enkai-" + item.id);
       history.replaceState(null, "", "?" + key);
