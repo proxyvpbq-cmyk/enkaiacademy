@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -28,7 +28,7 @@
         <a href="#contact" class="nav-link">Contact</a>
         <a href="#gallery" class="btn-cta">+ Upload Artwork</a>
       </nav>
-      <button class="nav-toggle" id="navToggle"><span></span><span></span><span></span></button>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
     </div>
   </header>
 
@@ -56,6 +56,9 @@
         <button class="filter-btn" data-filter="video">Videos</button>
       </div>
       <div class="gallery-grid" id="galleryGrid"></div>
+      <p class="disclaimer">
+        <strong>Disclaimer:</strong> All artworks displayed on this website are the intellectual property of <strong>Tran Quang Trung / Enkai Art Agency</strong>. Unauthorized reproduction, redistribution, or commercial use without written permission is prohibited. Views expressed in descriptions belong solely to the owner.
+      </p>
     </div>
   </section>
 
@@ -65,10 +68,10 @@
         <span class="about-label">ENKAI FOUNDER</span>
         <h2>Owner & Founder:<br/><span class="highlight">Tran Quang Trung</span></h2>
         <p>
-          Enkai Art Agency was founded by <strong>Tran Quang Trung</strong> with a vision to celebrate aesthetics and creative power. We are proud to deliver refined visual experiences across digital art, 3D, and high-end motion graphics.
+          Enkai Art Agency was founded by <strong>Tran Quang Trung</strong> with a vision to celebrate aesthetics and creative power. We deliver refined visual experiences across digital art, 3D, and high-end motion graphics.
         </p>
         <p>
-          This collection serves as an exclusive gallery for the creative works of <strong>Tran Quang Trung</strong>, allowing visitors and clients worldwide to explore, appreciate, and collaborate with ease.
+          This collection serves as an exclusive gallery for the creative works of <strong>Tran Quang Trung</strong>, allowing visitors worldwide to explore and collaborate with ease.
         </p>
         <p class="ownership">
           All content, images, and artworks on this website are the legal property of <strong>Tran Quang Trung</strong> — the sole owner of Enkai Art Agency.
@@ -79,8 +82,8 @@
         <ul>
           <li><strong>Unique ideas:</strong> Every piece tells a distinct story.</li>
           <li><strong>Diverse content:</strong> From high-resolution stills to vivid motion video.</li>
-          <li><strong>Seamless access:</strong> Optimized viewing on both mobile and desktop.</li>
-          <li><strong>Global reach:</strong> Connecting high-quality digital art with audiences worldwide.</li>
+          <li><strong>Seamless access:</strong> Optimized for mobile and desktop.</li>
+          <li><strong>Global reach:</strong> Connecting digital art with audiences worldwide.</li>
         </ul>
       </div>
     </div>
@@ -103,7 +106,7 @@
           <label>Message</label>
           <textarea rows="4" placeholder="Write your message..."></textarea>
         </div>
-        <button type="button" class="btn-primary form-btn" onclick="this.classList.add('btn-clicked');setTimeout(()=>this.classList.remove('btn-clicked'),500);alert('Thank you for your interest in Enkai Art Agency!')">Send Message</button>
+        <button type="button" class="btn-primary form-btn" onclick="alert('Thank you for your interest in Enkai Art Agency!')">Send Message</button>
       </div>
     </div>
   </section>
@@ -118,6 +121,7 @@
     </div>
   </footer>
 
+  <!-- Detail modal / post panel -->
   <div class="modal" id="detailModal" aria-hidden="true">
     <div class="modal-overlay"></div>
     <div class="modal-content">
@@ -136,10 +140,14 @@
           <div><span class="meta-k">Release</span> <span id="modalDate"></span></div>
           <div><span class="meta-k">Ownership</span> <span>Enkai Art Agency</span></div>
         </div>
+        <p class="modal-disclaimer">
+          This artwork is the exclusive property of Tran Quang Trung / Enkai Art Agency. Sharing the link is allowed; redistribution or commercial use requires permission.
+        </p>
         <div class="modal-actions">
           <button type="button" class="btn-action" id="btnCopyLink">Share</button>
           <a class="btn-action btn-download" id="btnDownload" href="#" download>Download</a>
         </div>
+        <p class="modal-permalink" id="modalPermalink"></p>
       </div>
     </div>
   </div>

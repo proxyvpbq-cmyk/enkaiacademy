@@ -423,3 +423,37 @@ img, video { max-width: 100%; display: block; }
   color: #0a0a0c;
   border-color: #e8b84a;
 }
+
+
+.disclaimer {
+  margin-top: 2.5rem;
+  padding: 1.1rem 1.3rem;
+  font-size: 0.82rem;
+  line-height: 1.55;
+  color: #7a7770;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 12px;
+}
+.disclaimer strong { color: #9b9890; }
+.modal-disclaimer {
+  font-size: 0.78rem;
+  line-height: 1.5;
+  color: #6e6b65;
+  margin: 0 0 1rem;
+  padding: 0.7rem 0.85rem;
+  background: rgba(255,255,255,0.03);
+  border-radius: 10px;
+  border-left: 3px solid rgba(232,184,74,0.45);
+}
+.modal-permalink {
+  margin-top: 0.85rem;
+  font-size: 0.72rem;
+  color: #6e6b65;
+  word-break: break-all;
+}
+.modal-permalink a {
+  color: #e8b84a;
+  text-decoration: none;
+}
+.modal-permalink a:hover { text-decoration: underline; }
