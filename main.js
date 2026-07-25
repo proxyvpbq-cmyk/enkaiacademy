@@ -72,8 +72,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!list.length) {
       grid.innerHTML = `
         <div class="empty-state">
-          <p style="font-size:1.15rem">Chưa có tác phẩm nào</p>
-          <p>Hãy thêm ảnh/video vào data/works.json</p>
+          <p style="font-size:1.15rem">Chưa có tác phẩm nào</pv
         </div>`;
       return;
     }
