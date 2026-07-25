@@ -37,7 +37,10 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     // Ensure every work has a slug
     works.forEach(w => {
-      if (!w.slug) w.slug = "post-" + String(w.id || randomSlug().slice(5));
+      if (!w.slug) {
+        const prefix = w.type === "video" ? "vid-" : "img-";
+        w.slug = prefix + randomSlug().replace("post-", "");
+      }
     });
     renderGallery(works);
     openFromUrl();
@@ -91,10 +94,14 @@ document.addEventListener("DOMContentLoaded", () => {
   const modalMedia = document.getElementById("modalMedia");
   let currentItem = null;
 
+  function makeKey(item) {
+    if (item.slug) return item.slug;
+    const prefix = item.type === "video" ? "vid-" : "img-";
+    return prefix + String(item.id);
+  }
   function getPermalink(item) {
     const base = window.location.href.split("?")[0].split("#")[0];
-    const key = item.slug || ("post-enkai-" + item.id);
-    return base + "?" + key;
+    return base + "?" + makeKey(item);
   }
 
   function openModal(item, updateUrl) {
@@ -137,8 +144,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     if (updateUrl) {
-      const key = item.slug || ("post-enkai-" + item.id);
-      history.replaceState(null, "", "?" + key);
+      history.replaceState(null, "", "?" + makeKey(item));
     }
 
     modal.classList.add("open");
@@ -192,7 +198,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const q = (window.location.search || "").replace(/^\?/, "");
     if (!q) return;
     const key = q.split("&")[0];
-    const item = works.find(w => w.slug === key || ("post-enkai-" + w.id) === key);
+    const item = works.find(w => w.slug === key || makeKey(w) === key);
     if (item) openModal(item, false);
   }
   window.addEventListener("popstate", openFromUrl);
