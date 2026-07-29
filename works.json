@@ -1,32 +1,59 @@
 [
   {
-    "id": "work-1",
-    "title": "Hello love you",
-    "category": "photography",
-    "categoryName": "PHOTOGRAPHY",
-    "author": "T Tran Quang Trung",
-    "image": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=1200&q=80",
-    "date": "2026",
-    "description": "Fine art portrait photography artwork created by Tran Quang Trung."
+    "id": 1,
+    "slug": "post-k7m2x9qa",
+    "title": "Morning Light",
+    "type": "image",
+    "category": "PHOTOGRAPHY",
+    "src": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=900&q=80",
+    "description": "Soft morning light filtering through early mist.",
+    "date": "2026-03-12",
+    "tags": [
+      "Landscape",
+      "Light",
+      "Nature"
+    ]
   },
   {
-    "id": "work-2",
-    "title": "Golden Sunset Bloom",
-    "category": "photography",
-    "categoryName": "PHOTOGRAPHY",
-    "author": "T Tran Quang Trung",
-    "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80",
-    "date": "2026",
-    "description": "Landscape digital capture by Tran Quang Trung."
+    "id": 2,
+    "slug": "post-b3n8w1rt",
+    "title": "Gentle Blooms",
+    "type": "image",
+    "category": "PHOTOGRAPHY",
+    "src": "https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=900&q=80",
+    "description": "Soft floral tones in a refined pastel palette.",
+    "date": "2026-01-20",
+    "tags": [
+      "Floral",
+      "Pastel"
+    ]
   },
   {
-    "id": "work-3",
-    "title": "Neon Cyber Space",
-    "category": "3d-art",
-    "categoryName": "3D ART",
-    "author": "T Tran Quang Trung",
-    "image": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=80",
-    "date": "2026",
-    "description": "Cyberpunk 3D digital scene archive."
+    "id": 3,
+    "slug": "post-f5p0z4uc",
+    "title": "Minimal Space",
+    "type": "image",
+    "category": "INTERIOR",
+    "src": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=900&q=80",
+    "description": "Minimalist interior with natural light.",
+    "date": "2025-12-05",
+    "tags": [
+      "Interior",
+      "Minimal"
+    ]
+  },
+  {
+    "id": 4,
+    "slug": "vid-h9q6y2vd",
+    "title": "Memory Clip",
+    "type": "video",
+    "category": "VIDEO",
+    "src": "https://www.w3schools.com/html/mov_bbb.mp4",
+    "description": "Demo video clip.",
+    "date": "2026-04-18",
+    "tags": [
+      "Motion",
+      "Demo"
+    ]
   }
 ]
