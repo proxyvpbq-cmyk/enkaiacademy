@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản trị Admin | Enkai Art Agency</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            <a href="index.html" class="logo-link">
+                <span class="brand">ENKAI</span>
+                <span class="sub-brand">ART AGENCY ADMIN</span>
+            </a>
+        </div>
+        <a href="index.html" class="btn-admin-link"><i class="fa-solid fa-house"></i> Về Trang Chủ</a>
+    </header>
+
+    <main class="admin-container">
+        <!-- Form Đăng Nhập Admin -->
+        <div id="login-section" class="admin-card">
+            <h2><i class="fa-solid fa-lock"></i> Đăng Nhập Quản Trị</h2>
+            <p class="subtitle">Mật khẩu mặc định: <strong>admin123</strong></p>
+            <form id="login-form">
+                <div class="form-group">
+                    <label>Mật khẩu Admin:</label>
+                    <input type="password" id="admin-password" placeholder="Nhập mật khẩu..." required>
+                </div>
+                <button type="submit" class="btn-submit">Đăng Nhập</button>
+            </form>
+        </div>
+
+        <!-- Dashboard Quản Lý Tác Phẩm -->
+        <div id="dashboard-section" class="admin-card hidden">
+            <div class="dashboard-header">
+                <h2><i class="fa-solid fa-pen-to-square"></i> Quản Lý Tác Phẩm</h2>
+                <button id="logout-btn" class="btn-logout"><i class="fa-solid fa-right-from-bracket"></i> Đăng Xuất</button>
+            </div>
+
+            <!-- Form Thêm / Chỉnh Sửa Tác Phẩm -->
+            <form id="artwork-form" class="artwork-form">
+                <input type="hidden" id="edit-id" value="">
+                <h3 id="form-title">Thêm Tác Phẩm Mới</h3>
+                
+                <div class="form-group">
+                    <label>Tiêu đề tác phẩm:</label>
+                    <input type="text" id="art-title" placeholder="Ví dụ: Hoàng Hôn Trên Biển..." required>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Loại định dạng:</label>
+                        <select id="art-type">
+                            <option value="image">Hình ảnh (Image)</option>
+                            <option value="video">Video</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Ngày đăng tải:</label>
+                        <input type="date" id="art-date" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Đường Link URL (Ảnh / Video):</label>
+                    <input type="url" id="art-url" placeholder="https://example.com/anh-cua-toi.jpg" required>
+                    <small>Dán đường dẫn trực tiếp của ảnh hoặc video từ Imgur, Unsplash, Google Drive,...</small>
+                </div>
+
+                <div class="form-group">
+                    <label>Mô tả / Nội dung chi tiết:</label>
+                    <textarea id="art-desc" rows="5" placeholder="Nhập ý tưởng, câu chuyện hoặc nội dung mô tả tác phẩm..."></textarea>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn-submit" id="btn-save">Đăng Tác Phẩm</button>
+                    <button type="button" class="btn-cancel hidden" id="btn-cancel">Hủy Chỉnh Sửa</button>
+                </div>
+            </form>
+
+            <hr class="divider">
+
+            <!-- Danh Sách Tác Phẩm Hiện Có -->
+            <h3>Danh Sách Tác Phẩm Đã Đăng</h3>
+            <div class="admin-list" id="admin-artwork-list"></div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
