@@ -1,2 +1,0 @@
-# enkaiacademy
-deptrao
