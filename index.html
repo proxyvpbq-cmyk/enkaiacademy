@@ -1,156 +1,243 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Enkai Art Agency | Tran Quang Trung</title>
-  <meta name="description" content="Enkai Art Agency — Owner Tran Quang Trung" />
-  <link rel="icon" href="logo.svg" type="image/svg+xml" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@500;600;700;800&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visual Arts & Design Portfolio | Dark Navy Edition</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body>
-  <header class="topbar">
-    <div class="container topbar-inner">
-      <a href="#" class="brand">
-        <img src="logo.svg" alt="Enkai" class="brand-logo" onerror="this.style.display='none'" />
-        <div class="brand-text">
-          <span class="brand-name">Enkai Art Agency</span>
-          <span class="brand-owner">OWNER: TRAN QUANG TRUNG</span>
+<body class="dark-navy-theme">
+    <!-- Header Navbar -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="brand-logo" id="logoLink">
+                <img src="logo.svg" alt="Portfolio Logo" class="logo-icon">
+                <span class="logo-text">AURA<span>STUDIO</span></span>
+            </a>
+            <nav class="nav-links">
+                <a href="#gallery" class="nav-item active"><i class="fa-solid fa-grid-2"></i> Bộ Sưu Tập</a>
+                <a href="#about" class="nav-item"><i class="fa-solid fa-user"></i> Giới Thiệu</a>
+                <a href="#contact" class="nav-item"><i class="fa-solid fa-paper-plane"></i> Liên Hệ</a>
+            </nav>
+            <div class="header-actions">
+                <div class="search-box">
+                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                    <input type="text" id="searchInput" placeholder="Tìm kiếm tác phẩm, thẻ tag...">
+                </div>
+            </div>
         </div>
-      </a>
-      <nav class="nav" id="navLinks">
-        <a href="#home" class="nav-link">Home</a>
-        <a href="#gallery" class="nav-link">Gallery</a>
-        <a href="#about" class="nav-link">About</a>
-        <a href="#contact" class="nav-link">Contact</a>
-        <a href="#gallery" class="btn-cta">+ Upload Artwork</a>
-      </nav>
-      <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
-    </div>
-  </header>
+    </header>
 
-  <section id="home" class="hero">
-    <div class="container">
-      <p class="hero-badge">✦ Enkai Art Agency</p>
-      <h1 class="hero-title">Premium digital<br/><span>art space</span></h1>
-      <p class="hero-desc">A showcase & archive of works by <strong>Tran Quang Trung</strong> — sole owner of Enkai Art Agency.</p>
-      <div class="hero-actions">
-        <a href="#gallery" class="btn-primary">Explore Artworks</a>
-        <a href="#about" class="btn-ghost">About the Founder</a>
-      </div>
-    </div>
-  </section>
-
-  <section id="gallery" class="section">
-    <div class="container">
-      <div class="section-head">
-        <h2>Artwork Gallery</h2>
-        <p>Digital art collection by Tran Quang Trung</p>
-      </div>
-      <div class="filter-bar">
-        <button class="filter-btn active" data-filter="all">All</button>
-        <button class="filter-btn" data-filter="image">Images</button>
-        <button class="filter-btn" data-filter="video">Videos</button>
-      </div>
-      <div class="gallery-grid" id="galleryGrid"></div>
-      <p class="disclaimer">
-        <strong>Disclaimer:</strong> All artworks displayed on this website are the intellectual property of <strong>Tran Quang Trung / Enkai Art Agency</strong>. Unauthorized reproduction, redistribution, or commercial use without written permission is prohibited. Views expressed in descriptions belong solely to the owner.
-      </p>
-    </div>
-  </section>
-
-  <section id="about" class="section about-section">
-    <div class="container about-grid">
-      <div class="about-main">
-        <span class="about-label">ENKAI FOUNDER</span>
-        <h2>Owner & Founder:<br/><span class="highlight">Tran Quang Trung</span></h2>
-        <p>
-          Enkai Art Agency was founded by <strong>Tran Quang Trung</strong> with a vision to celebrate aesthetics and creative power. We deliver refined visual experiences across digital art, 3D, and high-end motion graphics.
-        </p>
-        <p>
-          This collection serves as an exclusive gallery for the creative works of <strong>Tran Quang Trung</strong>, allowing visitors worldwide to explore and collaborate with ease.
-        </p>
-        <p class="ownership">
-          All content, images, and artworks on this website are the legal property of <strong>Tran Quang Trung</strong> — the sole owner of Enkai Art Agency.
-        </p>
-      </div>
-      <div class="mission-card">
-        <h3>◎ Our Mission</h3>
-        <ul>
-          <li><strong>Unique ideas:</strong> Every piece tells a distinct story.</li>
-          <li><strong>Diverse content:</strong> From high-resolution stills to vivid motion video.</li>
-          <li><strong>Seamless access:</strong> Optimized for mobile and desktop.</li>
-          <li><strong>Global reach:</strong> Connecting digital art with audiences worldwide.</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact" class="section contact-section">
-    <div class="container">
-      <h2>Contact</h2>
-      <p class="section-desc">Send a message to Tran Quang Trung</p>
-      <div class="contact-form">
-        <div class="form-group">
-          <label>Full name</label>
-          <input type="text" placeholder="Enter your name" />
+    <!-- Hero Banner -->
+    <section class="hero-section">
+        <div class="hero-bg-glow"></div>
+        <div class="container hero-content">
+            <span class="hero-badge"><i class="fa-solid fa-sparkles"></i> Creative Gallery Portfolio</span>
+            <h1 class="hero-title">Khám Phá Nghệ Thuật <br><span class="gradient-text">Thị Giác & Thiết Kế Doc Đáo</span></h1>
+            <p class="hero-subtitle">Bộ sưu tập tác phẩm đồ họa, nhiếp ảnh nghệ thuật và thiết kế 3D cao cấp. Nhấp vào bất kỳ bức ảnh nào để xem trang chi tiết tác phẩm.</p>
+            
+            <div class="stats-row">
+                <div class="stat-card">
+                    <span class="stat-num" id="totalWorksCount">0</span>
+                    <span class="stat-label">Tác Phẩm</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-num">100%</span>
+                    <span class="stat-label">Chất Lượng Hi-Res</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-num">24K+</span>
+                    <span class="stat-label">Lượt Xem</span>
+                </div>
+            </div>
         </div>
-        <div class="form-group">
-          <label>Email</label>
-          <input type="email" placeholder="email@example.com" />
-        </div>
-        <div class="form-group">
-          <label>Message</label>
-          <textarea rows="4" placeholder="Write your message..."></textarea>
-        </div>
-        <button type="button" class="btn-primary form-btn" onclick="alert('Thank you for your interest in Enkai Art Agency!')">Send Message</button>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <footer class="footer">
-    <div class="container footer-inner">
-      <div class="footer-brand">
-        <img src="logo.svg" alt="" class="footer-logo" onerror="this.style.display='none'" />
-        <span>Enkai Art Agency</span>
-      </div>
-      <p>© 2026 Tran Quang Trung · Sole Owner · All rights reserved.</p>
-    </div>
-  </footer>
+    <!-- Main Content Grid -->
+    <main class="main-content container" id="gallery">
+        <!-- Filter Bar -->
+        <div class="filter-wrapper">
+            <div class="filter-categories" id="filterCategories">
+                <button class="filter-btn active" data-filter="all">Tất Cả</button>
+                <button class="filter-btn" data-filter="photography">Nhiếp Ảnh</button>
+                <button class="filter-btn" data-filter="3d-art">Nghệ Thuật 3D</button>
+                <button class="filter-btn" data-filter="ui-ux">Giao Diện UI/UX</button>
+                <button class="filter-btn" data-filter="digital-art">Digital Painting</button>
+            </div>
+            <div class="view-options">
+                <button class="view-btn active" id="grid3Col" title="Lưới 3 Cột"><i class="fa-solid fa-grid"></i></button>
+                <button class="view-btn" id="grid4Col" title="Lưới 4 Cột"><i class="fa-solid fa-grid-5"></i></button>
+            </div>
+        </div>
 
-  <!-- Detail modal / post panel -->
-  <div class="modal" id="detailModal" aria-hidden="true">
-    <div class="modal-overlay"></div>
-    <div class="modal-content">
-      <button class="modal-close" aria-label="Close">&times;</button>
-      <div class="modal-media" id="modalMedia"></div>
-      <div class="modal-info">
-        <span class="modal-cat" id="modalCat"></span>
-        <h3 id="modalTitle"></h3>
-        <div class="modal-author">
-          <span class="author-avatar">T</span>
-          <span>Tran Quang Trung</span>
+        <!-- Image Gallery Grid -->
+        <div class="gallery-grid" id="galleryGrid">
+            <!-- Dynamic JavaScript Render Target -->
         </div>
-        <p id="modalDesc"></p>
-        <div class="modal-tags" id="modalTags"></div>
-        <div class="modal-meta">
-          <div><span class="meta-k">Release</span> <span id="modalDate"></span></div>
-          <div><span class="meta-k">Ownership</span> <span>Enkai Art Agency</span></div>
-        </div>
-        <p class="modal-disclaimer">
-          This artwork is the exclusive property of Tran Quang Trung / Enkai Art Agency. Sharing the link is allowed; redistribution or commercial use requires permission.
-        </p>
-        <div class="modal-actions">
-          <button type="button" class="btn-action" id="btnCopyLink">Share</button>
-          <a class="btn-action btn-download" id="btnDownload" href="#" download>Download</a>
-        </div>
-              </div>
-    </div>
-  </div>
 
-  <script src="main.js"></script>
+        <!-- No Results State -->
+        <div class="no-results hidden" id="noResults">
+            <i class="fa-regular fa-face-frown search-empty-icon"></i>
+            <h3>Không tìm thấy tác phẩm phù hợp</h3>
+            <p>Thử tìm kiếm với từ khóa khác hoặc chuyển sang danh mục khác.</p>
+        </div>
+    </main>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="container about-container">
+            <div class="about-image-side">
+                <div class="img-frame">
+                    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80" alt="Creator Portrait">
+                    <div class="experience-badge">
+                        <span class="years">8+</span>
+                        <span class="text">Năm Kinh Nghiệm Sáng Tạo</span>
+                    </div>
+                </div>
+            </div>
+            <div class="about-text-side">
+                <span class="section-tag">VỀ TÁC GIẢ</span>
+                <h2>Kiến Tạo Những Trải Nghiệm Thị Giác Đỉnh Cao</h2>
+                <p>Tôi là một Visual Designer & Artist đam mê kết hợp công nghệ hiện đại với tính nghệ thuật chiều sâu. Mỗi tác phẩm mang một câu chuyện độc đáo về ánh sáng, màu sắc và không gian.</p>
+                <div class="skills-list">
+                    <div class="skill-item"><i class="fa-solid fa-check-circle"></i> Digital Illustration</div>
+                    <div class="skill-item"><i class="fa-solid fa-check-circle"></i> 3D Modeling & Rendering</div>
+                    <div class="skill-item"><i class="fa-solid fa-check-circle"></i> UI/UX Design & Prototyping</div>
+                    <div class="skill-item"><i class="fa-solid fa-check-circle"></i> Fine Art Photography</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Footer -->
+    <footer class="footer-section" id="contact">
+        <div class="container footer-content">
+            <div class="footer-col brand-col">
+                <div class="brand-logo">
+                    <img src="logo.svg" alt="Logo">
+                    <span class="logo-text">AURA<span>STUDIO</span></span>
+                </div>
+                <p>Nơi tôn vinh cái đẹp của nghệ thuật kỹ thuật số và thiết kế sáng tạo đỉnh cao.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-behance"></i></a>
+                    <a href="#"><i class="fa-brands fa-dribbble"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Điều Hướng</h4>
+                <ul>
+                    <li><a href="#gallery">Trang Chủ</a></li>
+                    <li><a href="#gallery">Bộ Sưu Tập</a></li>
+                    <li><a href="#about">Về Tác Giả</a></li>
+                    <li><a href="#contact">Liên Hệ</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Liên Hệ Làm Việc</h4>
+                <p><i class="fa-solid fa-envelope"></i> contact@aurastudio.design</p>
+                <p><i class="fa-solid fa-phone"></i> +84 (0) 912 345 678</p>
+                <p><i class="fa-solid fa-location-dot"></i> Hà Nội / TP. Hồ Chí Minh, Việt Nam</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 AuraStudio. Tất cả quyền được bảo lưu. Giao diện Dark Navy Premium.</p>
+        </div>
+    </footer>
+
+    <!-- Fullscreen Detailed Photo View / Dynamic Detail Page Overlay -->
+    <div class="detail-overlay" id="detailOverlay">
+        <div class="detail-modal-container">
+            <button class="close-detail-btn" id="closeDetailBtn" title="Đóng trang chi tiết (Esc)">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            
+            <div class="detail-layout">
+                <!-- Left Column: Big Image Display with Zoom & Nav -->
+                <div class="detail-media-column">
+                    <div class="image-stage">
+                        <img id="detailImg" src="" alt="Work Detail">
+                        <div class="stage-overlay-controls">
+                            <button class="stage-btn" id="fullScreenBtn" title="Xem toàn màn hình"><i class="fa-solid fa-expand"></i></button>
+                            <button class="stage-btn" id="likeBtn" title="Yêu thích"><i class="fa-regular fa-heart"></i> <span id="likeCount">0</span></button>
+                        </div>
+                    </div>
+                    
+                    <!-- Quick Image Navigation -->
+                    <div class="detail-nav-buttons">
+                        <button class="nav-prev-btn" id="prevWorkBtn"><i class="fa-solid fa-arrow-left"></i> Tác Phẩm Trước</button>
+                        <button class="nav-next-btn" id="nextWorkBtn">Tác Phẩm Tiếp <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+
+                <!-- Right Column: Rich Metadata & Content Info -->
+                <div class="detail-info-column">
+                    <div class="detail-header">
+                        <span class="detail-category-badge" id="detailCategory">Category</span>
+                        <h2 class="detail-title" id="detailTitle">Tên Tác Phẩm</h2>
+                        <div class="detail-meta-strip">
+                            <span><i class="fa-regular fa-calendar"></i> <span id="detailDate">2026</span></span>
+                            <span><i class="fa-regular fa-eye"></i> <span id="detailViews">1.2k</span> Lượt xem</span>
+                            <span><i class="fa-regular fa-user"></i> Khách hàng: <strong id="detailClient">Aura Art</strong></span>
+                        </div>
+                    </div>
+
+                    <div class="detail-description">
+                        <h3><i class="fa-solid fa-align-left"></i> Giới Thiệu Tác Phẩm</h3>
+                        <p id="detailDesc">Mô tả chi tiết tác phẩm sẽ xuất hiện tại đây...</p>
+                    </div>
+
+                    <!-- Technical Specs / Details -->
+                    <div class="detail-specs">
+                        <h3><i class="fa-solid fa-sliders"></i> Thông Số Kỹ Thuật</h3>
+                        <div class="specs-grid">
+                            <div class="spec-card">
+                                <span class="spec-label">Độ phân giải</span>
+                                <span class="spec-value" id="specResolution">3840 x 2160 (4K)</span>
+                            </div>
+                            <div class="spec-card">
+                                <span class="spec-label">Công cụ thực hiện</span>
+                                <span class="spec-value" id="specTools">Photoshop / Blender</span>
+                            </div>
+                            <div class="spec-card">
+                                <span class="spec-label">Bản quyền</span>
+                                <span class="spec-value">© Standard License</span>
+                            </div>
+                            <div class="spec-card">
+                                <span class="spec-label">Định dạng</span>
+                                <span class="spec-value">PNG / RAW Hi-Res</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tags -->
+                    <div class="detail-tags-section">
+                        <h4>Thẻ Thể Loại</h4>
+                        <div class="detail-tags" id="detailTags">
+                            <!-- Tags render here -->
+                        </div>
+                    </div>
+
+                    <!-- Actions -->
+                    <div class="detail-action-bar">
+                        <a href="#" id="downloadHdBtn" class="btn btn-primary" download target="_blank">
+                            <i class="fa-solid fa-download"></i> Tải Ảnh Chất Lượng Cao
+                        </a>
+                        <button class="btn btn-outline" id="shareBtn">
+                            <i class="fa-solid fa-share-nodes"></i> Chia Sẻ
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="main.js"></script>
 </body>
 </html>

@@ -1,57 +1,141 @@
 [
   {
-    "id": 1,
-    "slug": "post-k7m2x9qa",
-    "title": "Hello love you",
-    "type": "image",
-    "category": "PHOTOGRAPHY",
-    "src": "https://i.postimg.cc/nLGrJbj9/FB-IMG-1784995289604.jpg",
-    "description": "Love has treated me so terribly. It’s truly heartbreaking.",
-    "date": "2019-03-12",
-    "tags": ["sad", "Love", "grey"]
+    "id": "work-1",
+    "title": "Neon Cyberpunk Metropolis 2099",
+    "category": "3d-art",
+    "categoryName": "Nghệ Thuật 3D",
+    "image": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=80",
+    "date": "15/05/2026",
+    "views": "3,420",
+    "likes": 284,
+    "client": "CyberVision Studio",
+    "description": "Tác phẩm tạo dựng thành phố tương lai rực rỡ với ánh đèn neon huyền ảo dưới màn mưa đêm. Kết hợp kỹ thuật Unreal Engine 5 và Blender Octane Render.",
+    "resolution": "3840 x 2160 (4K)",
+    "tools": [
+      "Blender",
+      "Unreal Engine 5",
+      "Photoshop"
+    ],
+    "tags": [
+      "Cyberpunk",
+      "Neon",
+      "3D Modeling",
+      "Sci-Fi"
+    ]
   },
   {
-    "id": 2,
-    "slug": "post-b3n8w1rt",
-    "title": "Gentle Blooms",
-    "type": "image",
-    "category": "PHOTOGRAPHY",
-    "src": "https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=900&q=80",
-    "description": "Soft floral tones in a refined pastel palette.",
-    "date": "2026-01-20",
-    "tags": ["Floral", "Pastel"]
+    "id": "work-2",
+    "title": "Thái Cực Băng & Lửa Digital Painting",
+    "category": "digital-art",
+    "categoryName": "Digital Painting",
+    "image": "https://images.unsplash.com/photo-1579783902614-a3fb3927b675?auto=format&fit=crop&w=1200&q=80",
+    "date": "02/04/2026",
+    "views": "2,190",
+    "likes": 195,
+    "client": "Aura Fantasy Art",
+    "description": "Bức tranh kỹ thuật số khắc họa sự tương phản giữa khối băng giá ngàn năm và ngọn lửa rực cháy. Tạo điểm nhấn ấn tượng cho bộ sưu tập triển lãm.",
+    "resolution": "4000 x 3000 Hi-Res",
+    "tools": [
+      "Procreate",
+      "Photoshop CC"
+    ],
+    "tags": [
+      "ConceptArt",
+      "Fantasy",
+      "DigitalArt",
+      "Illustration"
+    ]
   },
   {
-    "id": 3,
-    "slug": "post-f5p0z4uc",
-    "title": "Love isn't something to be trifled with.",
-    "type": "image",
-    "category": "portrait",
-    "src": "https://i.postimg.cc/0Q72hSS2/FB-IMG-1785029572411.jpg",
-    "description": "I'm not only cute, but I'm also lovable..",
-    "date": "2020-12-05",
-    "tags": ["😁", "love"]
+    "id": "work-3",
+    "title": "Bộ Ảnh Nhiếp Ảnh Khung Cảnh Núi Sương",
+    "category": "photography",
+    "categoryName": "Nhiếp Ảnh",
+    "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80",
+    "date": "18/03/2026",
+    "views": "4,810",
+    "likes": 412,
+    "client": "National Geographic VN",
+    "description": "Khoảnh khắc bình minh trên đỉnh núi mờ sương. Sử dụng máy ảnh Full-frame Sony A7R IV cùng ống kính GM 24-70mm cho độ sắc nét và màu sắc tuyệt mỹ.",
+    "resolution": "6000 x 4000 (RAW HD)",
+    "tools": [
+      "Sony A7R IV",
+      "Lightroom Classic"
+    ],
+    "tags": [
+      "Landscape",
+      "Photography",
+      "Nature",
+      "BìnhMinh"
+    ]
   },
   {
-    "id": 4,
-    "slug": "vid-h9q6y2vd",
-    "title": "Memory Clip",
-    "type": "video",
-    "category": "VIDEO",
-    "src": "https://www.w3schools.com/html/mov_bbb.mp4",
-    "description": "Demo video clip.",
-    "date": "2026-04-18",
-    "tags": ["Motion", "Demo"]
+    "id": "work-4",
+    "title": "Giao Diện Mobile App Tài Chính SmartBank",
+    "category": "ui-ux",
+    "categoryName": "Giao Diện UI/UX",
+    "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80",
+    "date": "10/02/2026",
+    "views": "1,850",
+    "likes": 160,
+    "client": "FinTech Corp",
+    "description": "Thiết kế giao diện ứng dụng ngân hàng số hiện đại, phong cách Dark Mode xanh than sang trọng, tối ưu trải nghiệm người dùng và biểu đồ trực quan.",
+    "resolution": "1920 x 1080 Mobile",
+    "tools": [
+      "Figma",
+      "After Effects"
+    ],
+    "tags": [
+      "UIUX",
+      "MobileApp",
+      "Fintech",
+      "DarkMode"
+    ]
   },
   {
-    "id": 5,
-    "slug": "post-91919jakwk",
-    "title": "minimal",
-    "type": "image",
-    "category": "Photo",
-    "src": "https://i.postimg.cc/T3WLDDzf/IMG-20260612-133216.jpg",
-    "description": "bau troi rhat dep.",
-    "date": "2018-04-18",
-    "tags": ["Motion", "Demo"]
+    "id": "work-5",
+    "title": "Abstract Hologram Sphere 3D",
+    "category": "3d-art",
+    "categoryName": "Nghệ Thuật 3D",
+    "image": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1200&q=80",
+    "date": "22/01/2026",
+    "views": "2,930",
+    "likes": 230,
+    "client": "Aura Motion Lab",
+    "description": "Nghiên cứu khúc xạ ánh sáng và chất liệu thủy tinh quang học dạng sóng trong không gian 3 chiều. Thiết kế phù hợp làm background sự kiện đỉnh cao.",
+    "resolution": "3840 x 2160 (4K)",
+    "tools": [
+      "Cinema 4D",
+      "Redshift"
+    ],
+    "tags": [
+      "Abstract",
+      "Glass",
+      "3D",
+      "Motion"
+    ]
+  },
+  {
+    "id": "work-6",
+    "title": "Chân Dung Nhiếp Ảnh Nghệ Thuật Ánh Sáng Tối",
+    "category": "photography",
+    "categoryName": "Nhiếp Ảnh",
+    "image": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=1200&q=80",
+    "date": "05/01/2026",
+    "views": "5,120",
+    "likes": 520,
+    "client": "Vogue Vietnam Studio",
+    "description": "Bộ ảnh portrait nghệ thuật đánh sáng kiểu Low-key, làm nổi bật đường nét khuôn mặt và thần thái nhân vật trong không gian màu xanh than mượt mà.",
+    "resolution": "5120 x 2880 Ultra HD",
+    "tools": [
+      "Canon EOS R5",
+      "Capture One"
+    ],
+    "tags": [
+      "Portrait",
+      "Studio",
+      "Fashion",
+      "LowKey"
+    ]
   }
 ]
