@@ -205,3 +205,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
   loadWorks();
 });
+
+document.addEventListener('click',e=>{
+ const img=e.target.closest('img');
+ if(!img) return;
+ let m=document.getElementById('imgModal');
+ if(!m){
+   m=document.createElement('div');
+   m.id='imgModal'; m.className='modal';
+   m.innerHTML='<img><div style="color:white;margin-top:10px;text-align:center" id="cap"></div>';
+   m.onclick=()=>m.style.display='none';
+   document.body.appendChild(m);
+ }
+ m.querySelector('img').src=img.src;
+ document.getElementById('cap').textContent=img.alt||'Chi tiết hình ảnh';
+ m.style.display='flex';
+});
